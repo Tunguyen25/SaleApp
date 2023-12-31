@@ -14,9 +14,10 @@
                     <a class="nav-link" href="/?cate_id={{c.id}}">{{ c.name }}</a>
                 </li>
                 {% endfor %}
-                 <li class="nav-item">
-                    <a class="nav-link text-danger" href="/cart">&#128722; Giỏ Hàng <span class="badge bg-danger cart-counter">{{ cart.total_quantity }}</span></a>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="/cart">&#128722; Giỏ hàng <span class="badge bg-danger cart-counter">{{ cart.total_quantity }}</span></a>
                 </li>
+
             </ul>
             <form class="d-flex" method="get" action="/">
                 <input class="form-control me-2" name="kw" type="text" placeholder="Nhập từ khóa...">
